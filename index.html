@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GitHub Repositories</title>
+  </head>
+  <body>
+    <header>
+      <h1>GitHub Repositories</h1>
+    </header>
+    <main>
+      <label for="username">GitHub Username:</label>
+      <input type="text" id="username" placeholder="Enter GitHub username" />
+      <button onclick="fetchRepositories()">Fetch Repositories</button>
+      <div id="repositories"></div>
+      <div id="languages"></div>
+      <!-- Corrected the ID -->
+
+      <div id="pagination-controls">
+        <button onclick="previousPage()">Previous</button>
+        <span id="page-number">Page: 1</span>
+        <button onclick="nextPage()">Next</button>
+      </div>
+    </main>
+    <script src="try.js"></script>
+  </body>
+</html>
